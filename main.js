@@ -1,13 +1,17 @@
 const {app, BrowserWindow, Menu} = require('electron');
+// adcionando o arquivo para conexção com o banco de dados
+require('./database')
 
 // Janela Princioal
 var mainWindow = null;
 
 async function createWindow() {  //asyn pq tem funções assincronas
   mainWindow = new BrowserWindow({
-    width: 1000,
-    height: 600
-
+    width: 500,
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true
+    }
   });
   await mainWindow.loadFile('src/pages/editor/login.html');
 }
@@ -28,7 +32,7 @@ function createNewFile() {
   mainWindow.webContents.send('set-file', file);
 }
 
-// template Menu
+/* template Menu
 const templateMenu = [{
       label: 'Arquivo',
       submenu: [{
@@ -41,12 +45,12 @@ const templateMenu = [{
     }, {
       label: 'Fechar',
       role: process.platform === 'darwin' ? 'close' : 'quit'
-    }] // faz a verificação se é mac or windows
-;
+    }] // faz a verificação se é mac or windows;
 
 // Menu
-const menu = Menu.buildFromTemplate(templateMenu);
+//const menu = Menu.buildFromTemplate(templateMenu);
 Menu.setApplicationMenu(menu);
+*/
 //ON READY
 app.whenReady().then(createWindow);
 
