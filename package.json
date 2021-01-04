@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mfelippe/WorkFlow-desktop/issues"
   },
-  "homepage": "https://github.com/mfelippe/WorkFlow-desktop#readme"
+  "homepage": "https://github.com/mfelippe/WorkFlow-desktop#readme",
+  "dependencies": {
+    "electron": "^11.1.1"
+  }
 }

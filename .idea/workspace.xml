@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="Merge pull request #1 from mfelippe/sub-main&#10;&#10;criando layout inicial" />
+    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="Merge pull request #1 from mfelippe/sub-main&#10;&#10;criando layout inicial">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609771761690</updated>
       <workItem from="1609771768845" duration="4002000" />
-      <workItem from="1609777803895" duration="322000" />
+      <workItem from="1609777803895" duration="653000" />
     </task>
     <task id="LOCAL-00001" summary="criando app com electron">
       <created>1609772933156</created>
@@ -94,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609776373896</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Merge pull request #1 from mfelippe/sub-main&#10;&#10;criando layout inicial">
+      <created>1609778295777</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609778295777</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,9 +135,21 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1758" y="163" key="Vcs.Push.Dialog.v2" timestamp="1609776385265">
+    <state x="1612" y="121" key="MergeDialog" timestamp="1609778374325">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
-    <state x="1758" y="163" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609776385265" />
+    <state x="1612" y="121" key="MergeDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609778374325" />
+    <state x="1804" y="191" key="MultipleFileMergeDialog" timestamp="1609778380445">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="1804" y="191" key="MultipleFileMergeDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609778380445" />
+    <state x="1758" y="163" key="Vcs.Push.Dialog.v2" timestamp="1609778301347">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="1758" y="163" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609778301347" />
+    <state x="2000" y="164" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1609778258401">
+      <screen x="1366" y="0" width="1600" height="860" />
+    </state>
+    <state x="2000" y="164" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609778258401" />
   </component>
 </project>
