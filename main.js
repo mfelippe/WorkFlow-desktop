@@ -5,11 +5,11 @@ var mainWindow = null;
 
 async function createWindow() {  //asyn pq tem funções assincronas
   mainWindow = new BrowserWindow({
-    width: 800,
+    width: 1000,
     height: 600
 
   });
-  await mainWindow.loadFile('src/pages/editor/index.html');
+  await mainWindow.loadFile('src/pages/editor/login.html');
 }
 
 // ARQUIVO
@@ -25,7 +25,7 @@ function createNewFile() {
     path: app.getPath('documents') + '/novo-arquivo.txt'
   };
 
-  console.log(file);
+  mainWindow.webContents.send('set-file', file);
 }
 
 // template Menu
