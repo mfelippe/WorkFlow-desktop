@@ -19,16 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="Inclusão do Bootstrap e criação da tela de login">
-      <change afterPath="$PROJECT_DIR$/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/editor/scripts_db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/editor/styles.css" afterDir="false" />
+    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="inclusao da conexão com o banco de dados e inicrio do script para login de usuarios.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/editor/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/editor/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/editor/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/editor/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/editor/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/editor/scripts_db.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/editor/scripts_db.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +71,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Desktop\Workflow_1.0\src\pages\editor" />
+      <recent name="C:\Users\PC\Desktop\Workflow_1.0" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="database.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/database.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -93,7 +96,8 @@
       <option name="presentableId" value="Default" />
       <updated>1609771761690</updated>
       <workItem from="1609771768845" duration="4002000" />
-      <workItem from="1609777803895" duration="14132000" />
+      <workItem from="1609777803895" duration="14393000" />
+      <workItem from="1609852355745" duration="25333000" />
     </task>
     <task id="LOCAL-00001" summary="criando app com electron">
       <created>1609772933156</created>
@@ -144,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609782733301</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="inclusao da conexão com o banco de dados e inicrio do script para login de usuarios.">
+      <created>1609793189061</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609793189061</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +183,8 @@
     <MESSAGE value="Merge pull request #1 from mfelippe/sub-main&#10;&#10;criando layout inicial" />
     <MESSAGE value="configurando app" />
     <MESSAGE value="Inclusão do Bootstrap e criação da tela de login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inclusão do Bootstrap e criação da tela de login" />
+    <MESSAGE value="inclusao da conexão com o banco de dados e inicrio do script para login de usuarios." />
+    <option name="LAST_COMMIT_MESSAGE" value="inclusao da conexão com o banco de dados e inicrio do script para login de usuarios." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -182,22 +194,22 @@
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
     <state x="1896" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609780834546" />
-    <state width="1579" height="222" key="GridCell.Tab.0.bottom" timestamp="1609788812974">
+    <state width="1579" height="222" key="GridCell.Tab.0.bottom" timestamp="1609793289576">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609788812974" />
-    <state width="1579" height="222" key="GridCell.Tab.0.center" timestamp="1609788812973">
+    <state width="1579" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609793289576" />
+    <state width="1579" height="222" key="GridCell.Tab.0.center" timestamp="1609793289576">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="222" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609788812973" />
-    <state width="1579" height="222" key="GridCell.Tab.0.left" timestamp="1609788812973">
+    <state width="1579" height="222" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609793289576" />
+    <state width="1579" height="222" key="GridCell.Tab.0.left" timestamp="1609793289576">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="222" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609788812973" />
-    <state width="1579" height="222" key="GridCell.Tab.0.right" timestamp="1609788812974">
+    <state width="1579" height="222" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609793289576" />
+    <state width="1579" height="222" key="GridCell.Tab.0.right" timestamp="1609793289576">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="222" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609788812974" />
+    <state width="1579" height="222" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609793289576" />
     <state x="1612" y="121" key="MergeDialog" timestamp="1609778374325">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
@@ -206,10 +218,10 @@
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
     <state x="1804" y="191" key="MultipleFileMergeDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609778380445" />
-    <state x="1758" y="163" key="Vcs.Push.Dialog.v2" timestamp="1609782762453">
+    <state x="1758" y="163" key="Vcs.Push.Dialog.v2" timestamp="1609793202150">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
-    <state x="1758" y="163" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609782762453" />
+    <state x="1758" y="163" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609793202150" />
     <state x="2000" y="164" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1609778258401">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>

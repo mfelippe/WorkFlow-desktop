@@ -1,8 +1,23 @@
-const {app, BrowserWindow, Menu} = require('electron');
+const {app, BrowserWindow, Menu, remote} = require('electron');
 // adcionando o arquivo para conexção com o banco de dados
-require('./database')
+const {conex} = require('./database');
+
+//função de comunicação remota
+async function consultaLogin(usuario) {
+  try {
+    const conn = await conex();
+    const result = await conn.query('SELECT * FROM desk nome = ?', usuario.nome);
+    //const result = await conn.query('INSERT INTO desk SET ?',usuario);
+    usuario = result;
+
+  } catch (error) {
+    console.log(error)
+  }
+  return usuario;
+}
 
 // Janela Princioal
+
 var mainWindow = null;
 
 async function createWindow() {  //asyn pq tem funções assincronas
@@ -10,8 +25,10 @@ async function createWindow() {  //asyn pq tem funções assincronas
     width: 500,
     height: 600,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      enableRemoteModule: true,
     }
+
   });
   await mainWindow.loadFile('src/pages/editor/login.html');
 }
@@ -60,3 +77,10 @@ app.on('activate', () => {
     createWindow();
   }
 })
+
+//exportação de módulos
+
+module.exports = {consultaLogin}
+
+
+
