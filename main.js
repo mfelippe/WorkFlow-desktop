@@ -15,7 +15,17 @@ async function consultaLogin(usuario) {
         if (usuario.senha === row.senha) {
           usuario.id = row.id;
           console.log(usuario)
-          mainWindow.loadFile('./src/pages/editor/painel.html');
+          const painel = new BrowserWindow({
+            width: 1000,
+            height: 800,
+            webPreferences: {
+              nodeIntegration: true,
+              enableRemoteModule: true,
+            }
+
+          });
+          painel.loadFile('./src/pages/editor/painel.html');
+          mainWindow.close();
           return (usuario);
 
         }
