@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="inclusao da conexão com o banco de dados e inicrio do script para login de usuarios.">
+    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="backend para troca de informações entre paginas, conexção com o banco de dados, e falta filtradas os dados e jogar em objetos.">
+      <change afterPath="$PROJECT_DIR$/src/pages/editor/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/editor/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/editor/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/editor/scripts.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/editor/scripts_db.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/editor/scripts_db.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +35,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -97,7 +96,8 @@
       <updated>1609771761690</updated>
       <workItem from="1609771768845" duration="4002000" />
       <workItem from="1609777803895" duration="14393000" />
-      <workItem from="1609852355745" duration="25333000" />
+      <workItem from="1609852355745" duration="25643000" />
+      <workItem from="1609891189348" duration="5412000" />
     </task>
     <task id="LOCAL-00001" summary="criando app com electron">
       <created>1609772933156</created>
@@ -155,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609793189061</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="backend para troca de informações entre paginas, conexção com o banco de dados, e falta filtradas os dados e jogar em objetos.">
+      <created>1609878656053</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609878656053</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +191,8 @@
     <MESSAGE value="configurando app" />
     <MESSAGE value="Inclusão do Bootstrap e criação da tela de login" />
     <MESSAGE value="inclusao da conexão com o banco de dados e inicrio do script para login de usuarios." />
-    <option name="LAST_COMMIT_MESSAGE" value="inclusao da conexão com o banco de dados e inicrio do script para login de usuarios." />
+    <MESSAGE value="backend para troca de informações entre paginas, conexção com o banco de dados, e falta filtradas os dados e jogar em objetos." />
+    <option name="LAST_COMMIT_MESSAGE" value="backend para troca de informações entre paginas, conexção com o banco de dados, e falta filtradas os dados e jogar em objetos." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -218,10 +226,10 @@
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
     <state x="1804" y="191" key="MultipleFileMergeDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609778380445" />
-    <state x="1758" y="163" key="Vcs.Push.Dialog.v2" timestamp="1609793202150">
+    <state x="1758" y="163" key="Vcs.Push.Dialog.v2" timestamp="1609878684321">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
-    <state x="1758" y="163" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609793202150" />
+    <state x="1758" y="163" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609878684321" />
     <state x="2000" y="164" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1609778258401">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>

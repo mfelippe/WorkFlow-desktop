@@ -1,29 +1,49 @@
 const {app, BrowserWindow, Menu, remote} = require('electron');
 // adcionando o arquivo para conexção com o banco de dados
 const {conex} = require('./database');
+//variaveis do sistema
+var pagina = 'src/pages/editor/login.html';
+var altura = 600;
+var largura = 500;
+
 
 //função de comunicação remota
 async function consultaLogin(usuario) {
   try {
+    let tentativa = 0;
     const conn = await conex();
-    const result = await conn.query('SELECT * FROM desk nome = ?', usuario.nome);
-    //const result = await conn.query('INSERT INTO desk SET ?',usuario);
-    usuario = result;
+    await conn.query('SELECT * FROM desk WHERE nome = ?', usuario.nome, function (error, results, fields) {
+      if (error) tentativa = 1 + tentativa;
 
+      results.forEach(function (row) {
+        if (usuario.senha != row.senha) {
+          //script para avisar que a senha tá errada
+
+        } else {
+          usuario.id = row.id;
+          console.log(usuario)
+          return (usuario);
+        }
+
+      });
+
+
+    });
   } catch (error) {
     console.log(error)
   }
-  return usuario;
+
 }
 
 // Janela Princioal
 
 var mainWindow = null;
 
-async function createWindow() {  //asyn pq tem funções assincronas
+
+async function createWindow(altura = 800, largura = 600, pagina) {  //asyn pq tem funções assincronas
   mainWindow = new BrowserWindow({
-    width: 500,
-    height: 600,
+    width: largura,
+    height: altura,
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true,

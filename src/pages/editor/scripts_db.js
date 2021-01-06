@@ -8,12 +8,14 @@ const password = document.getElementById('senha');
 
 form_login.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const newProduct = {
+
+    const newUser = {
         nome: user.value,
         senha: password.value
     }
-    const resulta = await main.consultaLogin(newProduct);
-    console.log(resulta);
+
+    const usuario = await main.consultaLogin(newUser);
+    console.log(usuario);
 
 });
 
