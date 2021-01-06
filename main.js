@@ -2,32 +2,42 @@ const {app, BrowserWindow, Menu, remote, Notification} = require('electron');
 // adcionando o arquivo para conexção com o banco de dados
 const {conex} = require('./database');
 
+var tentativa = 0;
 
 //função de comunicação remota
 async function consultaLogin(usuario) {
   try {
-    let tentativa = 0;
+
     const conn = await conex();
     await conn.query('SELECT * FROM desk WHERE nome = ?', usuario.nome, function (error, results, fields) {
-      if (error) tentativa = 1 + tentativa;
+      if (error) console.log("Ops, encontramos um problema");
 
+      //carregamento dos dados encontrados no banco
       results.forEach(function (row) {
         if (usuario.senha === row.senha) {
           usuario.id = row.id;
-          console.log(usuario)
-          const painel = new BrowserWindow({
-            width: 1000,
-            height: 800,
-            webPreferences: {
-              nodeIntegration: true,
-              enableRemoteModule: true,
-            }
 
-          });
-          painel.loadFile('./src/pages/editor/painel.html');
+          //notificação de login
+          new Notification({
+            title: 'Olá ' + usuario.nome,
+            body: 'bem vindo ao WorkFlow Arteon Z'
+          }).show()
+          //função de abrir nova tela
+          openPainel();
+
           mainWindow.close();
           return (usuario);
-
+        } else {
+          console.log("ERRO email ou login digitado errado", tentativa)
+          tentativa = tentativa + 1;
+          if (tentativa < 3) {
+            new Notification({
+              title: 'Ops, encontramos alguns errros',
+              body: 'Porfavor, verifique o email ou a senha inserida'
+            }).show()
+          } else {
+            mainWindow.close();
+          }
         }
 
       });
@@ -35,8 +45,40 @@ async function consultaLogin(usuario) {
 
     });
   } catch (error) {
-    console.log(error)
+
+    //notificação de erro ao se conectar ao banco de dados
+
+    new Notification({
+      title: 'ERRO AO SE CONECTAR',
+      body: 'Não Foi Possível se conectar ao servidor, verifique sua conexção'
+    }).show()
+    return (error)
   }
+
+}
+
+//script de captura de usuario logado
+async function getUsuario() {
+  const conn = await conex();
+  const results = await conn.query('SELECT * FROM desk')
+  console.log(results)
+  return results;
+}
+
+//abertura de janela
+async function openPainel() {
+
+  const painel = new BrowserWindow({
+    width: 800,
+    height: 700,
+    webPreferences: {
+      nodeIntegration: true,
+      enableRemoteModule: true,
+    }
+
+  });
+
+  await painel.loadFile('./src/pages/editor/painel.html');
 
 }
 
@@ -44,7 +86,7 @@ async function consultaLogin(usuario) {
 
 var mainWindow = null;
 
-async function createWindow(pagina) {  //asyn pq tem funções assincronas
+async function createWindow() {  //asyn pq tem funções assincronas
   mainWindow = new BrowserWindow({
     width: 500,
     height: 600,
@@ -104,7 +146,10 @@ app.on('activate', () => {
 
 //exportação de módulos
 
-module.exports = {consultaLogin}
+module.exports = {
+  consultaLogin,
+  getUsuario
+}
 
 
 
