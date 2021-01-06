@@ -14,8 +14,8 @@ form_login.addEventListener('submit', async (e) => {
         senha: password.value
     }
 
-    const usuario = await main.consultaLogin(newUser);
-    console.log(usuario);
+
+    main.consultaLogin(newUser);
 
 });
 

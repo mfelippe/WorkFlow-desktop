@@ -1,10 +1,6 @@
-const {app, BrowserWindow, Menu, remote} = require('electron');
+const {app, BrowserWindow, Menu, remote, Notification} = require('electron');
 // adcionando o arquivo para conexção com o banco de dados
 const {conex} = require('./database');
-//variaveis do sistema
-var pagina = 'src/pages/editor/login.html';
-var altura = 600;
-var largura = 500;
 
 
 //função de comunicação remota
@@ -16,13 +12,12 @@ async function consultaLogin(usuario) {
       if (error) tentativa = 1 + tentativa;
 
       results.forEach(function (row) {
-        if (usuario.senha != row.senha) {
-          //script para avisar que a senha tá errada
-
-        } else {
+        if (usuario.senha === row.senha) {
           usuario.id = row.id;
           console.log(usuario)
+          mainWindow.loadFile('./src/pages/editor/painel.html');
           return (usuario);
+
         }
 
       });
@@ -39,18 +34,17 @@ async function consultaLogin(usuario) {
 
 var mainWindow = null;
 
-
-async function createWindow(altura = 800, largura = 600, pagina) {  //asyn pq tem funções assincronas
+async function createWindow(pagina) {  //asyn pq tem funções assincronas
   mainWindow = new BrowserWindow({
-    width: largura,
-    height: altura,
+    width: 500,
+    height: 600,
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true,
     }
 
   });
-  await mainWindow.loadFile('src/pages/editor/login.html');
+  await mainWindow.loadFile('./src/pages/editor/login.html');
 }
 
 // ARQUIVO

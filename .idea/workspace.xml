@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="backend para troca de informações entre paginas, conexção com o banco de dados, e falta filtradas os dados e jogar em objetos.">
-      <change afterPath="$PROJECT_DIR$/src/pages/editor/dashboard.html" afterDir="false" />
+    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="login implementado">
+      <change afterPath="$PROJECT_DIR$/src/pages/editor/painel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/editor/dashboard.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/editor/scripts_db.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/editor/scripts_db.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +64,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -97,7 +99,8 @@
       <workItem from="1609771768845" duration="4002000" />
       <workItem from="1609777803895" duration="14393000" />
       <workItem from="1609852355745" duration="25643000" />
-      <workItem from="1609891189348" duration="5412000" />
+      <workItem from="1609891189348" duration="5485000" />
+      <workItem from="1609896971274" duration="3443000" />
     </task>
     <task id="LOCAL-00001" summary="criando app com electron">
       <created>1609772933156</created>
@@ -162,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609878656053</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="login implementado">
+      <created>1609896831431</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609896831431</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,12 +202,17 @@
     <MESSAGE value="Inclusão do Bootstrap e criação da tela de login" />
     <MESSAGE value="inclusao da conexão com o banco de dados e inicrio do script para login de usuarios." />
     <MESSAGE value="backend para troca de informações entre paginas, conexção com o banco de dados, e falta filtradas os dados e jogar em objetos." />
-    <option name="LAST_COMMIT_MESSAGE" value="backend para troca de informações entre paginas, conexção com o banco de dados, e falta filtradas os dados e jogar em objetos." />
+    <MESSAGE value="login implementado" />
+    <option name="LAST_COMMIT_MESSAGE" value="login implementado" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="437" y="188" key="#Notifications" timestamp="1609892373918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="437" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1609892373917" />
     <state x="1896" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609780834546">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
@@ -226,17 +241,19 @@
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
     <state x="1804" y="191" key="MultipleFileMergeDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609778380445" />
-    <state x="1758" y="163" key="Vcs.Push.Dialog.v2" timestamp="1609878684321">
-      <screen x="1366" y="0" width="1600" height="860" />
+    <state x="335" y="138" key="Vcs.Push.Dialog.v2" timestamp="1609896854113">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1758" y="163" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609878684321" />
+    <state x="335" y="138" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609896854113" />
     <state x="2000" y="164" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1609778258401">
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
     <state x="2000" y="164" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609778258401" />
-    <state x="1822" y="195" key="run.anything.popup" timestamp="1609792826138">
-      <screen x="1366" y="0" width="1600" height="860" />
+    <state x="389" y="165" key="run.anything.popup" timestamp="1609893178532">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1822" y="195" key="run.anything.popup/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609792826138" />
+    <state x="389" y="165" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1609893178532" />
   </component>
 </project>
