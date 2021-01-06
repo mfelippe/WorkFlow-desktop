@@ -6,14 +6,13 @@ const main = remote.require('./main');
 const user = document.getElementById('email');
 const password = document.getElementById('senha');
 
-/*const captUsuario = async()=>{
-    await usuario = main.getUsuario();
-    console.log(usuario)
-}*/
+const captUsuario = async () => {
+    const results = await main.getUsuario();
+    console.log(results.id)
+}
 
 form_login.addEventListener('submit', async (e) => {
     e.preventDefault();
-
     const newUser = {
         nome: user.value,
         senha: password.value
@@ -21,5 +20,5 @@ form_login.addEventListener('submit', async (e) => {
 
     await main.consultaLogin(newUser);
 
-});
 
+});

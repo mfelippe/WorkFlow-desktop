@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="transição de tela">
+    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="checagem de login">
+      <change afterPath="$PROJECT_DIR$/src/pages/editor/dash.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/editor/painel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/editor/painel.html" afterDir="false" />
@@ -34,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -100,7 +101,7 @@
       <workItem from="1609852355745" duration="25643000" />
       <workItem from="1609891189348" duration="5485000" />
       <workItem from="1609896971274" duration="4638000" />
-      <workItem from="1609936288423" duration="13773000" />
+      <workItem from="1609936288423" duration="21648000" />
     </task>
     <task id="LOCAL-00001" summary="criando app com electron">
       <created>1609772933156</created>
@@ -186,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609901597083</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="checagem de login">
+      <created>1609954456626</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609954456626</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +227,8 @@
     <MESSAGE value="login implementado" />
     <MESSAGE value="login funcionando, e transição para tela de principal do app." />
     <MESSAGE value="transição de tela" />
-    <option name="LAST_COMMIT_MESSAGE" value="transição de tela" />
+    <MESSAGE value="checagem de login" />
+    <option name="LAST_COMMIT_MESSAGE" value="checagem de login" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -257,10 +266,10 @@
       <screen x="1366" y="0" width="1600" height="860" />
     </state>
     <state x="1804" y="191" key="MultipleFileMergeDialog/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609778380445" />
-    <state x="335" y="138" key="Vcs.Push.Dialog.v2" timestamp="1609901602487">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1758" y="163" key="Vcs.Push.Dialog.v2" timestamp="1609954465790">
+      <screen x="1366" y="0" width="1600" height="860" />
     </state>
-    <state x="1758" y="163" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609878684321" />
+    <state x="1758" y="163" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1600.860@1366.0.1600.860" timestamp="1609954465790" />
     <state x="335" y="138" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609901602487" />
     <state x="2000" y="164" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1609778258401">
       <screen x="1366" y="0" width="1600" height="860" />

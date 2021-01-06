@@ -3,6 +3,8 @@ const {app, BrowserWindow, Menu, remote, Notification} = require('electron');
 const {conex} = require('./database');
 
 var tentativa = 0;
+var identificador = '';
+
 
 //função de comunicação remota
 async function consultaLogin(usuario) {
@@ -16,7 +18,7 @@ async function consultaLogin(usuario) {
       results.forEach(function (row) {
         if (usuario.senha === row.senha) {
           usuario.id = row.id;
-
+          identificador = row.id;
           //notificação de login
           new Notification({
             title: 'Olá ' + usuario.nome,
@@ -26,6 +28,7 @@ async function consultaLogin(usuario) {
           openPainel();
 
           mainWindow.close();
+
           return (usuario);
         } else {
           console.log("ERRO email ou login digitado errado", tentativa)
@@ -60,9 +63,11 @@ async function consultaLogin(usuario) {
 //script de captura de usuario logado
 async function getUsuario() {
   const conn = await conex();
-  const results = await conn.query('SELECT * FROM desk')
-  console.log(results)
+
+  const results = await conn.query('SELECT * FROM desk WHERE id = ?', identificador)
+  //console.log(results)
   return results;
+
 }
 
 //abertura de janela
