@@ -6,29 +6,28 @@ var tentativa = 0;
 var identificador = '';
 
 
+
 //função de comunicação remota
 async function consultaLogin(usuario) {
   try {
 
     const conn = await conex();
-    await conn.query('SELECT * FROM desk WHERE nome = ?', usuario.nome, function (error, results, fields) {
+    await conn.query('SELECT * FROM desk WHERE email = ?', usuario.email, function (error, results, fields) {
       if (error) console.log("Ops, encontramos um problema");
-
       //carregamento dos dados encontrados no banco
       results.forEach(function (row) {
+        console.log('id ', row.id)
         if (usuario.senha === row.senha) {
-          usuario.id = row.id;
+          //salvando o id para o carregamento do usuario
           identificador = row.id;
           //notificação de login
           new Notification({
-            title: 'Olá ' + usuario.nome,
+            title: 'Olá ' + usuario.email,
             body: 'bem vindo ao WorkFlow Arteon Z'
           }).show()
           //função de abrir nova tela
           openPainel();
-
-          mainWindow.close();
-
+          mainWindow.close(); //fechando tela de login
           return (usuario);
         } else {
           console.log("ERRO email ou login digitado errado", tentativa)
@@ -62,12 +61,12 @@ async function consultaLogin(usuario) {
 
 //script de captura de usuario logado
 async function getUsuario() {
+  const usuario = null
   const conn = await conex();
 
   const results = await conn.query('SELECT * FROM desk WHERE id = ?', identificador)
-  //console.log(results)
+  //console.log(results);
   return results;
-
 }
 
 //abertura de janela
