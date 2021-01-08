@@ -81,7 +81,7 @@ async function openPainel() {
     }
 
   });
-
+  Menu.setApplicationMenu(menuMaster);
   await painel.loadFile('./src/pages/editor/painel.html');
 
 
@@ -101,7 +101,7 @@ async function createWindow() {  //asyn pq tem funções assincronas
     }
 
   });
-  Menu.setApplicationMenu(menu1);
+  Menu.setApplicationMenu(menuLogin);
   await mainWindow.loadFile('./src/pages/editor/login.html');
 }
 
@@ -128,9 +128,24 @@ const templateMenuLogin = [{
   role: process.platform === 'darwin' ? 'close' : 'quit'
 }] // faz a verificação se é mac or windows;
 
-// Menu
-const menu1 = Menu.buildFromTemplate(templateMenuLogin);
+//Menu aplicação
+const templateMenuMaster = [{
+  label: 'DashBoard',
+  submenu: [{
+    label: 'Novo',
+    click() {
+      //configurando uma função quando for criado no clique no menu
+      createNewFile();
+    }
+  }]
+}, {label: 'Desembolso'}, {
+  label: 'Fechar',
+  role: process.platform === 'darwin' ? 'close' : 'quit'
+}]
 
+// Menus
+const menuLogin = Menu.buildFromTemplate(templateMenuLogin);
+const menuMaster = Menu.buildFromTemplate(templateMenuMaster);
 
 //ON READY
 app.whenReady().then(createWindow);

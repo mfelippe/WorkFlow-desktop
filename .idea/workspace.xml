@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="captura de dados no backend para ser mostrado no frontend do painel">
+    <list default="true" id="7b96ad83-b7c9-482a-8117-4a04f5ed3bbb" name="Default Changelist" comment="Criando Menu para aplicação">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
@@ -102,7 +102,7 @@
       <workItem from="1609896971274" duration="4638000" />
       <workItem from="1609936288423" duration="21826000" />
       <workItem from="1610023197631" duration="18336000" />
-      <workItem from="1610121167541" duration="1361000" />
+      <workItem from="1610121167541" duration="1678000" />
     </task>
     <task id="LOCAL-00001" summary="criando app com electron">
       <created>1609772933156</created>
@@ -209,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610044101624</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Criando Menu para aplicação">
+      <created>1610122594139</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610122594139</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +252,8 @@
     <MESSAGE value="checagem de login" />
     <MESSAGE value="tela de dash com dados em array, falta capturar os dados do array." />
     <MESSAGE value="captura de dados no backend para ser mostrado no frontend do painel" />
-    <option name="LAST_COMMIT_MESSAGE" value="captura de dados no backend para ser mostrado no frontend do painel" />
+    <MESSAGE value="Criando Menu para aplicação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando Menu para aplicação" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
